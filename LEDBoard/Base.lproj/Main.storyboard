@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,29 +17,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LabelLabelLabel" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wbA-Te-dPu">
-                                <rect key="frame" x="81" y="159" width="610" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="39"/>
-                                <color key="textColor" name="mainColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vi4-0O-O5W">
-                                <rect key="frame" x="101" y="31" width="722" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vi4-0O-O5W">
+                                <rect key="frame" x="74" y="20" width="748" height="60"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOC-td-J3l">
-                                        <rect key="frame" x="498" y="19" width="95" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rOC-td-J3l">
+                                        <rect key="frame" x="566.5" y="8" width="61.5" height="44"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="전송"/>
                                         <connections>
                                             <action selector="sendButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ofi-7Y-Pay"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="labellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabel" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="VvK-CF-B9X">
-                                        <rect key="frame" x="20" y="20" width="446" height="34"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdH-IO-k9Q">
+                                        <rect key="frame" x="644" y="8" width="88" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="29d-Ky-Fie"/>
+                                            <constraint firstAttribute="width" constant="88" id="hAm-vQ-Lzc"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="텍스트변경"/>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="labellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabellabel" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="VvK-CF-B9X">
+                                        <rect key="frame" x="16" y="8" width="534.5" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                         <connections>
@@ -48,46 +46,40 @@
                                             <action selector="editingEndAction:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ch3-oC-SUA"/>
                                         </connections>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qdH-IO-k9Q">
-                                        <rect key="frame" x="620" y="18" width="94" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="VvK-CF-B9X" firstAttribute="leading" secondItem="vi4-0O-O5W" secondAttribute="leading" constant="16" id="6bd-S9-JuA"/>
+                                    <constraint firstItem="qdH-IO-k9Q" firstAttribute="leading" secondItem="rOC-td-J3l" secondAttribute="trailing" constant="16" id="6jE-dm-xfL"/>
+                                    <constraint firstItem="rOC-td-J3l" firstAttribute="width" secondItem="qdH-IO-k9Q" secondAttribute="width" multiplier="0.7" id="8Kj-NT-bBp"/>
+                                    <constraint firstItem="rOC-td-J3l" firstAttribute="centerY" secondItem="qdH-IO-k9Q" secondAttribute="centerY" id="CFD-Lr-jpx"/>
+                                    <constraint firstAttribute="bottom" secondItem="VvK-CF-B9X" secondAttribute="bottom" constant="8" id="PVV-4D-Hfe"/>
+                                    <constraint firstItem="rOC-td-J3l" firstAttribute="height" secondItem="qdH-IO-k9Q" secondAttribute="height" id="Qva-HX-Zh3"/>
+                                    <constraint firstItem="rOC-td-J3l" firstAttribute="leading" secondItem="VvK-CF-B9X" secondAttribute="trailing" constant="16" id="SnT-Sc-kUa"/>
+                                    <constraint firstAttribute="trailing" secondItem="qdH-IO-k9Q" secondAttribute="trailing" constant="16" id="bn5-fT-H4y"/>
+                                    <constraint firstAttribute="height" constant="60" id="fcZ-5x-yuI"/>
+                                    <constraint firstItem="VvK-CF-B9X" firstAttribute="top" secondItem="vi4-0O-O5W" secondAttribute="top" constant="8" id="iq5-gB-Pdn"/>
+                                    <constraint firstItem="qdH-IO-k9Q" firstAttribute="centerY" secondItem="vi4-0O-O5W" secondAttribute="centerY" id="rmZ-Fi-Aii"/>
+                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SBP-6Z-xft">
-                                <rect key="frame" x="742" y="159" width="94" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="임시"/>
-                                <connections>
-                                    <action selector="exampleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z3B-1n-3Hx"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RoG-q7-CEm">
-                                <rect key="frame" x="632" y="113" width="94" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="임시"/>
-                                <connections>
-                                    <action selector="exampleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="04i-5D-bvB"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCU-pz-ktW">
-                                <rect key="frame" x="742" y="116" width="94" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="임시"/>
-                                <connections>
-                                    <action selector="exampleButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ewW-9z-ivT"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="wbA-Te-dPu">
+                                <rect key="frame" x="74" y="183.5" width="103" height="47"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="39"/>
+                                <color key="textColor" name="mainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="0.92253782579999999" blue="0.753366961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="wbA-Te-dPu" secondAttribute="trailing" constant="30" id="52d-Wr-mAz"/>
+                            <constraint firstItem="wbA-Te-dPu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="H28-G2-RgM"/>
+                            <constraint firstItem="vi4-0O-O5W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="XMy-EI-OXd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vi4-0O-O5W" secondAttribute="trailing" constant="30" id="cLZ-JP-KXh"/>
+                            <constraint firstItem="wbA-Te-dPu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="lnZ-Sl-YmZ"/>
+                            <constraint firstItem="vi4-0O-O5W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ltx-pT-MUq"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="Nef-B0-j8E" appends="YES" id="IRG-tn-jux"/>
                         </connections>

@@ -77,11 +77,6 @@ class LEDBoardViewController: UIViewController {
 //        upView.isHidden.toggle()
 
     }
-    @IBAction func exampleButton(_ sender: UIButton) {
-        
-        view.endEditing(true)
-        
-    }
     @IBAction func didEndOnExitAction(_ sender: UITextField) {
 //        view.endEditing(true)
     }
